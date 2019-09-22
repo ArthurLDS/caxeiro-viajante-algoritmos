@@ -1,7 +1,10 @@
 package tsp.fileUtils
 
 import tsp.algorithm.AStar
+import tsp.algorithm.Greedy
+import tsp.model.AlgorithmType
 import tsp.model.City
+import tsp.model.FileType
 
 import java.io.BufferedReader
 import java.io.FileReader
@@ -10,10 +13,12 @@ import java.util.ArrayList
 object ReaderEuclidine : BaseReader() {
     var initialCities = ArrayList<City>()
 
-    @JvmStatic
-    fun main(args: Array<String>) {
+    //@JvmStatic
+    //fun main(args: Array<String>) {
 
-        val fileName = ReaderUpperRow.readFileName()
+    fun run(algorithmType: AlgorithmType) {
+
+        val fileName = readFileName()
 
         try {
             val file = FileReader(fileName)
@@ -28,14 +33,18 @@ object ReaderEuclidine : BaseReader() {
         } catch (e: Exception) {
             println("Um erro ocorreu na leitura do arquivo!")
             e.printStackTrace()
-            System.exit(0)
         }
 
-        val aEstrela = AStar(initialCities)
-        aEstrela.calculateRoute()
-
-//        val guloso = Greedy(ReaderEuclidine.initialCities);
-//        guloso.calculateRoute()
+        when (algorithmType) {
+            AlgorithmType.GREEDY -> {
+                val greedy = Greedy(initialCities)
+                greedy.calculateRoute()
+            }
+            AlgorithmType.A_STAR -> {
+                val aStar = AStar(initialCities)
+                aStar.calculateRoute()
+            }
+        }
 
 
     }

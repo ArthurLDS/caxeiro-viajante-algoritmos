@@ -1,25 +1,30 @@
 package tsp.fileUtils
 
 import tsp.algorithm.AStar
+import tsp.algorithm.Greedy
+import tsp.model.AlgorithmType
 import tsp.model.City
 import java.io.BufferedReader
 import java.io.FileReader
 import java.util.*
 
-object ReaderUpperRow: BaseReader() {
+object ReaderUpperRow : BaseReader() {
 
     private var distanceCities: Array<DoubleArray>? = null
     var initialCities = ArrayList<City>()
 
-    @JvmStatic
-    fun main(args: Array<String>) {
+    //@JvmStatic
+    //fun main(args: Array<String>) {
+
+    fun run(algorithmType: AlgorithmType) {
 
         val fileName = readFileName()
 
+        var file = FileReader(fileName)
+        var reader = BufferedReader(file)
+        var line = reader.readLine()
+
         try {
-            val file = FileReader(fileName)
-            val reader = BufferedReader(file)
-            var line = reader.readLine()
             var counter = 0
             while (line != "EOF") {
                 counter++
@@ -27,44 +32,50 @@ object ReaderUpperRow: BaseReader() {
             }
             distanceCities = Array(counter + 1) { DoubleArray(counter + 1) }
             reader.close()
-        } catch (e: Exception) {
-            println("Erro durante a leitura do arquivo!")
-            e.printStackTrace()
-        }
 
-        try {
-            val arquivo = FileReader(fileName)
-            val leitor = BufferedReader(arquivo)
-            var linha = leitor.readLine()
-            var indexLinha = 0
-            while (linha != "EOF") {
-                val split = linha.trim { it <= ' ' }.split("\\s+".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
-                val splitDouble = DoubleArray(split.size)
+            file = FileReader(fileName)
+            reader = BufferedReader(file)
+            line = reader.readLine()
+            var indexLine = 0
+            while (line != "EOF") {
+                val lineSplit = line.trim { it <= ' ' }.split("\\s+".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
+                val splitDouble = DoubleArray(lineSplit.size)
                 for (i in splitDouble.indices) {
-                    splitDouble[i] = java.lang.Double.parseDouble(split[i])
+                    splitDouble[i] = java.lang.Double.parseDouble(lineSplit[i])
                 }
                 var aux = 0
                 if (splitDouble.isNotEmpty()) {
                     for (j in distanceCities!!.indices) {
                         while (aux < splitDouble.size) {
-                            if (distanceCities!![indexLinha][j] == 0.0 && indexLinha == j) {
+                            if (distanceCities!![indexLine][j] == 0.0 && indexLine == j) {
                                 break
-                            } else if (distanceCities!![indexLinha][j] != 0.0) {
+                            } else if (distanceCities!![indexLine][j] != 0.0) {
                                 break
                             } else {
-                                distanceCities!![indexLinha][j] = splitDouble[aux]
-                                distanceCities!![j][indexLinha] = splitDouble[aux]
+                                distanceCities!![indexLine][j] = splitDouble[aux]
+                                distanceCities!![j][indexLine] = splitDouble[aux]
                                 aux++
                             }
                         }
                     }
                 }
-                linha = leitor.readLine()
-                indexLinha++
+                line = reader.readLine()
+                indexLine++
             }
-            leitor.close()
+            reader.close()
             for (i in distanceCities!!.indices) {
                 initialCities.add(City(i, distanceCities!!))
+            }
+
+            when (algorithmType) {
+                AlgorithmType.GREEDY -> {
+                    val greedy = Greedy(initialCities)
+                    greedy.calculateRoute()
+                }
+                AlgorithmType.A_STAR -> {
+                    val aStar = AStar(initialCities)
+                    aStar.calculateRoute()
+                }
             }
 
             val aStar = AStar(initialCities)

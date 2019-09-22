@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c64f4780-0545-4267-95b4-741a8cd84fdf" name="Default Changelist" comment="" />
+    <list default="true" id="c64f4780-0545-4267-95b4-741a8cd84fdf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/tsp/MainApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tsp/model/AlgorithmType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tsp/model/FileType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnaliseAlgoritmos/tsp/fileUtils/ReaderEuclidine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnaliseAlgoritmos/tsp/fileUtils/ReaderEuclidine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AnaliseAlgoritmos/tsp/fileUtils/ReaderUpperRow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnaliseAlgoritmos/tsp/fileUtils/ReaderUpperRow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tsp/fileUtils/BaseReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/tsp/fileUtils/BaseReader.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tsp/fileUtils/ReaderEuclidine.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/tsp/fileUtils/ReaderEuclidine.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tsp/fileUtils/ReaderUpperRow.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/tsp/fileUtils/ReaderUpperRow.kt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +34,19 @@
         <entry file="file://$PROJECT_DIR$/src/tsp/algorithm/Greedy.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tsp/MainApplication.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+              <folding>
+                <element signature="e#13#125#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,26 +54,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tsp/fileUtils/ReaderEuclidine.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+            <state relative-caret-position="136">
+              <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tsp/model/City.kt">
+        <entry file="file://$PROJECT_DIR$/src/tsp/fileUtils/ReaderUpperRow.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="1071">
+              <caret line="69" column="34" lean-forward="true" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tsp/algorithm/BaseAlgorithm.kt">
+        <entry file="file://$PROJECT_DIR$/src/tsp/data/brasil58.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="48" selection-start-column="48" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tsp/fileUtils/BaseReader.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+              <caret line="10" column="21" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="10" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -64,6 +95,7 @@
         <option value="Class" />
         <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Enum" />
       </list>
     </option>
   </component>
@@ -78,7 +110,11 @@
       <find>somtaTotalFn</find>
       <find>matrizDistancias</find>
       <find>initialCities</find>
+      <find>indexLinha</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -114,6 +150,12 @@
         <option value="$PROJECT_DIR$/src/a_star/model/CityKotlin.kt" />
         <option value="$PROJECT_DIR$/src/tsp/algorithm/BaseAlgorithm.kt" />
         <option value="$PROJECT_DIR$/src/tsp/model/City.kt" />
+        <option value="$PROJECT_DIR$/src/tsp/fileUtils/BaseReader.kt" />
+        <option value="$PROJECT_DIR$/src/tsp/model/AlgorithmType.kt" />
+        <option value="$PROJECT_DIR$/src/tsp/model/FileType.kt" />
+        <option value="$PROJECT_DIR$/src/tsp/fileUtils/ReaderEuclidine.kt" />
+        <option value="$PROJECT_DIR$/src/tsp/fileUtils/ReaderUpperRow.kt" />
+        <option value="$PROJECT_DIR$/src/tsp/MainApplication.kt" />
       </list>
     </option>
   </component>
@@ -123,6 +165,7 @@
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -151,27 +194,6 @@
               <item name="AnaliseAlgoritmos" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tsp" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnaliseAlgoritmos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnaliseAlgoritmos" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tsp" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnaliseAlgoritmos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnaliseAlgoritmos" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tsp" type="462c0819:PsiDirectoryNode" />
-              <item name="fileUtils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnaliseAlgoritmos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnaliseAlgoritmos" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tsp" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -183,8 +205,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569117441106" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569123798590" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AEstrela" />
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
@@ -212,20 +234,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.tsp.fileUtils.ReaderEuclidine">
-    <configuration name="PilotoEuclidino" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="a_star.PilotoEuclidino" />
-      <module name="AnaliseAlgoritmos" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="a_star.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.tsp.MainApplication">
     <configuration name="PilotoUpperRow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="a_star.PilotoUpperRow" />
       <module name="AnaliseAlgoritmos" />
@@ -239,13 +248,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TSP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TSP" />
-      <module name="AnaliseAlgoritmos" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="a_star.PilotoEuclidino" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="AnaliseAlgoritmos" />
       <option name="VM_PARAMETERS" />
@@ -254,6 +256,19 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="a_star.PilotoEuclidino" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tsp.MainApplication" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="AnaliseAlgoritmos" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="tsp.MainApplication" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -272,13 +287,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="tsp.fileUtils.ReaderUpperRow" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="AnaliseAlgoritmos" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="tsp.fileUtils.ReaderUpperRow" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.tsp.MainApplication" />
+        <item itemvalue="Kotlin.tsp.fileUtils.ReaderUpperRow" />
         <item itemvalue="Kotlin.tsp.fileUtils.ReaderEuclidine" />
         <item itemvalue="Kotlin.a_star.PilotoEuclidino" />
         <item itemvalue="Application.PilotoUpperRow" />
-        <item itemvalue="Application.PilotoEuclidino" />
-        <item itemvalue="Application.TSP" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +325,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12526652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -308,8 +335,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3217768" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5503792" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.10617551" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40628386" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -354,6 +381,18 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/tsp/MainApplication.kt</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -526,20 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tsp/algorithm/AStar.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tsp/fileUtils/ReaderUpperRow.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tsp/algorithm/BaseAlgorithm.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -554,24 +579,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tsp/algorithm/AStar.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tsp/data/brasil58.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="48" selection-start-column="48" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tsp/fileUtils/BaseReader.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="170">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tsp/algorithm/Greedy.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tsp/model/AlgorithmType.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tsp/model/FileType.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tsp/MainApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+          <folding>
+            <element signature="e#13#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tsp/fileUtils/ReaderUpperRow.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="69" column="34" lean-forward="true" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tsp/fileUtils/ReaderEuclidine.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        <state relative-caret-position="136">
+          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
     </entry>
