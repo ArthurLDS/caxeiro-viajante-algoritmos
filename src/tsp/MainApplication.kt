@@ -40,6 +40,8 @@ object MainApplication {
 
         val algorithmSelected = AlgorithmType.values().first { it.type == algorithmType }
 
+        val startTime = System.nanoTime()
+
         when (fileTypeSelected) {
             FileType.EUCLIDINE -> {
                 ReaderEuclidine.run(algorithmSelected)
@@ -49,6 +51,10 @@ object MainApplication {
             }
         }
 
+        val endTime = System.nanoTime()
+        val duration = (endTime - startTime)/1000000
+
+        println("\nTEMPO TOTAL DE EXECUCAO: $duration milisegundos")
 
     }
 

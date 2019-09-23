@@ -4,11 +4,9 @@ import tsp.algorithm.AStar
 import tsp.algorithm.Greedy
 import tsp.model.AlgorithmType
 import tsp.model.City
-import tsp.model.FileType
-
 import java.io.BufferedReader
 import java.io.FileReader
-import java.util.ArrayList
+import java.util.*
 
 object ReaderEuclidine : BaseReader() {
     var initialCities = ArrayList<City>()

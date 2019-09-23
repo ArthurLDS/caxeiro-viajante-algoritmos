@@ -16,7 +16,7 @@ abstract class BaseAlgorithm(initialCities: ArrayList<City>) {
     abstract fun calculateNextCity()
 
     fun calculateRoute() {
-        val randomIndex = Random().nextInt(remainingCities.size)
+        val randomIndex = 5//Random().nextInt(remainingCities.size)
         pathRoute.add(remainingCities[randomIndex])
         remainingCities.removeAt(randomIndex)
 
@@ -42,9 +42,8 @@ abstract class BaseAlgorithm(initialCities: ArrayList<City>) {
     }
 
     private fun printResultReport() {
-        println()
-        println("Melhor rota encontrada: ${Arrays.toString(pathRoute.toTypedArray())}")
-        println("Total de custo: ${String.format("%.3f", pathCost)}  km")
+        println("\nRota ideal: ${Arrays.toString(pathRoute.toTypedArray())}")
+        println("Custo total em quilometros: ${String.format("%.3f", pathCost)} km")
     }
 
 
